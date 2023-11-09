@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aditya Sinha's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #273746; /* Grey background color */
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .title-container {
+            position: relative;
+            background: linear-gradient(to top, #00f, #fff); /* Blue to white gradient background for the title */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            transition: opacity 0.5s;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #111; /* Dark background color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #00f; /* Blue text color for section headers */
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            color: #fff;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section-content {
+            margin-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .self-introduction {
+            display: flex;
+            align-items: center;
+        }
+
+        .self-introduction img {
+            border: 3px solid #00f; /* Blue border for the image */
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .decorative-line {
+            width: 100%;
+            height: 2px;
+            background-color: #00f; /* Blue line */
+            margin: 20px 0;
+        }
+
+        /* Decorative element for list items */
+        .list-decorator {
+            background-color: #00f;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            display: inline;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #111; /* Dark background color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+        }
+
+        .feedback-form label {
+            display: block;
+            font-size: 18px;
+            margin-top: 10px;
+            color: #fff; /* White text color for labels */
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00f; /* Blue border */
+            border-radius: 5px;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00f; /* Blue border */
+            border-radius: 5px;
+        }
+
+        .feedback-form input[type="submit"] {
+            background-color: #00f; /* Blue background color for submit button */
+            color: #fff; /* White text color for submit button */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .feedback-form input[type="submit"]:hover {
+            background-color: #000; /* Dark background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1>Welcome to</h1>
+        <h1>Aditya Sinha's</h1>
+        <h1>Portfolio</h1>
+    </div>
+
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hi there! I'm Aditya Sinha, a dedicated and passionate individual with a strong background in various technical fields. My portfolio showcases my journey and achievements.</p>
+        <p>Feel free to explore my work and accomplishments below.</p>
+        
+        <div class="section">
+            <h2>School</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Github: <a href="https://github.com/Legendary9029">https://github.com/Legendary9029</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/adityasinha1304/">https://www.linkedin.com/in/adityasinha1304/</a></li>
+                    <li>Class Projects:-</li>
+                    <li>1st Sem: Hotel Management System in C</li>
+                    <li>3rd Sem: Bank Management System, Stack Machine, File Management System in Linux</li>
+                    <li>1st Sem GPA: 8.55</li>
+                    <li>2nd Sem GPA: 7.75</li>
+                    <li>Hackerrank:- Gold Badges in Python, DSA and C</li>
+                    <li>LeetCode:- More than 20 problems solved</li>
+                    <li>Projects Worked on: Hotel Management System in C, Bank Management System, File Management System in Linux</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="decorative-line"></div>
+
+        <div class="section">
+            <h2>Co-Curricular Activities</h2>
+            <div class="section-content">
+                <p>I was part of the X-Zone Club and helped in creating and hosting new and imaginative games for students to enjoy.</p>
+            </div>
+        </div>
+
+        <div class="decorative-line"></div>
+
+        <div class="section">
+            <h2>Self Introduction</h2>
+            <div class="self-introduction">
+                <img src="C:\Users\adity\OneDrive\Pictures\MyPic.jpg" alt="Aditya Sinha">
+                <p>Hi, I'm Aditya Sinha. I'm a passionate learner and a dedicated individual with a strong technical background.</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form action="process_feedback.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle title fading on scroll
+        window.onscroll = function() {
+            var titleContainer = document.querySelector('.title-container');
+            if (window.scrollY > 100) {
+                titleContainer.style.opacity = '0';
+            } else {
+                titleContainer.style.opacity = '1';
+            }
+        };
+    </script>
+</body>
+</html>
